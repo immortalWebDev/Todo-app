@@ -1,59 +1,77 @@
 .item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 15px;
-    margin-bottom: 10px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease-in-out;
-  }
-  
-  .item:hover {
-    transform: scale(1.02);
-  }
-  
-  .text {
-    flex-grow: 1;
-    font-size: 16px;
-    color: #333;
-  }
-  
-  .completed {
-    text-decoration: line-through;
-    color: #888;
-  }
-  
-  .actions {
-    display: flex;
-    gap: 10px;
-  }
-  
-  .toggleButton, .deleteButton {
-    padding: 5px 10px;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    font-size: 14px;
-  }
-  
-  .toggleButton {
-    background-color: #0070f3;
-    color: #fff;
-  }
-  
-  .toggleButton:hover {
-    background-color: #005bb5;
-  }
-  
-  .deleteButton {
-    background-color: #ff5a5f;
-    color: #fff;
-  }
-  
-  .deleteButton:hover {
-    background-color: #e04e50;
-  }
-  
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+  width: 100%;
+}
+
+.item:hover {
+  transform: scale(1.02);
+}
+
+.text {
+  flex-grow: 1;
+  font-size: 16px;
+  color: #333;
+  margin-right: 10px; 
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.toggleButton, .deleteButton, .editButton {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 14px;
+}
+
+.toggleButton {
+  background-color: #0070f3;
+  color: #fff;
+}
+
+.toggleButton:hover {
+  background-color: #005bb5;
+}
+
+.deleteButton {
+  background-color: #ff5a5f;
+  color: #fff;
+}
+
+.deleteButton:hover {
+  background-color: #e04e50;
+}
+
+.editButton {
+  background-color: #ffd700;
+  color: #000;
+}
+
+.editButton:hover {
+  background-color: #ffcc00;
+}
+
+.editInput {
+  flex: 1;
+  padding: 5px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}

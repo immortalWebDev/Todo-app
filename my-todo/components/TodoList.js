@@ -1,13 +1,13 @@
-import TodoItem from './TodoItem';
-import Link from 'next/link';
-import styles from './TodoList.module.css';
+import TodoItem from "./TodoItem";
+import Link from "next/link";
+import styles from "./TodoList.module.css";
 
-function TodoList({ todos, onDelete, onToggle }) {
+function TodoList({ todos, onDelete, onToggle, onEdit }) {
   return (
     <div className={styles.container}>
       <div className={styles.header}>
         <h2>Todo List</h2>
-        <Link href="/new">
+        <Link href="/new" passHref>
           <button className={styles.addButton}>Add New Task</button>
         </Link>
       </div>
@@ -18,6 +18,7 @@ function TodoList({ todos, onDelete, onToggle }) {
             todo={todo}
             onDelete={onDelete}
             onToggle={onToggle}
+            onEdit={onEdit}
           />
         ))}
       </ul>
@@ -26,4 +27,3 @@ function TodoList({ todos, onDelete, onToggle }) {
 }
 
 export default TodoList;
-
