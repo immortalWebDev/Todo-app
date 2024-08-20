@@ -1,0 +1,59 @@
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .item:hover {
+    transform: scale(1.02);
+  }
+  
+  .text {
+    flex-grow: 1;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .completed {
+    text-decoration: line-through;
+    color: #888;
+  }
+  
+  .actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .toggleButton, .deleteButton {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 14px;
+  }
+  
+  .toggleButton {
+    background-color: #0070f3;
+    color: #fff;
+  }
+  
+  .toggleButton:hover {
+    background-color: #005bb5;
+  }
+  
+  .deleteButton {
+    background-color: #ff5a5f;
+    color: #fff;
+  }
+  
+  .deleteButton:hover {
+    background-color: #e04e50;
+  }
+  
