@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 
-const MONGODB_URI = 'mongodb+srv://pgbadgujar007:p8T5jWD7SLoNlDC0@cluster0.qnxq8.mongodb.net/todoapp?retryWrites=true&w=majority&appName=Cluster0'
+const MONGODB_URI = process.env.MONGODB_URI;
 
 if (!MONGODB_URI) {
   throw new Error('Please provide valid mongodb string');
